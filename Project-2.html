@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Family Book</title>
+</head>
+<body style="text-align:center;">
+<h1>My Family Book</h1>
+<img src="https://previews.123rf.com/images/polyudova/polyudova1703/polyudova170300083/74768215-flat-style-vector-happy-family-mother-father-and-two-sons.jpg">
+<br><br>
+<h1 id="names"></h1>
+<br>
+<button type="button"id="btn"onclick="change1()">Next</button style="text-align:center;">
+<script>
+var images = [
+  "https://cdn3.vectorstock.com/i/1000x1000/79/47/business-woman-cartoon-character-young-attractive-vector-14427947.jpg",
+  "https://cdn1.vectorstock.com/i/1000x1000/71/20/real-state-agent-cartoon-vector-23687120.jpg",
+  "https://thumbs.dreamstime.com/b/kid-short-brown-hair-years-old-blue-shirt-black-short-trousers-71128731.jpg",
+  "https://webstockreview.net/images/boy-clipart-animated.jpg"
+];
+var names = [
+  "Mother",
+  "Father",
+  "Elder Brother",
+  "Me"];
+var x=0;
+function change1(){
+document.getElementById("img").src=images[x]; 
+document.getElementById("names").innerHTML=names[x];
+x++;
+}
+
+</script>
+</body>
+</html>
